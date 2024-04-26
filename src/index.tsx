@@ -2,7 +2,7 @@ import { Provider } from 'react-redux';
 
 import Widget from './components/Widget';
 
-import store from  './store';
+import store from './store';
 
 import { AnyFunction } from './utils/types';
 
@@ -67,6 +67,7 @@ function ConnectedWidget({
 }: Props) {
   return (
     <Provider store={store}>
+      <h1>hola</h1>
       <Widget
         title={title}
         titleAvatar={titleAvatar}
@@ -90,7 +91,7 @@ function ConnectedWidget({
         sendButtonAlt={sendButtonAlt}
         showTimeStamp={showTimeStamp}
         imagePreview={imagePreview}
-        zoomStep={zoomStep} 
+        zoomStep={zoomStep}
         handleSubmit={handleSubmit}
         showBadge={showBadge}
         resizable={resizable}
