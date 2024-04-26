@@ -14,12 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       # Setup .npmrc file to publish to npm
-      - name: Commit version pump
+      - name: yarn install node-sass
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git checkout -- .
-          git pull --rebase origin HEAD:main
+          npm install node-sass
       - uses: actions/setup-node@v3
         with:
           node-version: "20.x"
