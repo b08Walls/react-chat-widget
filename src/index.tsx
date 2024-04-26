@@ -67,7 +67,6 @@ function ConnectedWidget({
 }: Props) {
   return (
     <Provider store={store}>
-      <h1>hola</h1>
       <Widget
         title={title}
         titleAvatar={titleAvatar}
